@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<link href="logo.png" rel="shortcut icon">
+	<meta charset="UTF-8">
+	<title>Presiden RI</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="stylee.css">
+	<script src="javascript.js"></script>
+	<script src="javascript1.js"></script>
+	<script type="text/javascript" src="jquery-1.2.3.min.js"></script>
+	<script type="text/javascript"></script>
+<body>
+
+
+   <!-- <body onload = "JavaScript:AutoRefresh(5000);"> -->
+<div class="backTop"><img src="11.png" width="25" height="10"></div>
+<div class="container">
+	<p id="name"></p>
+	
+	<div class="header">
+			<a href="index.html"><img src="prs.png" width="200" height="50" alt="head" class="logo"></a>
+
+			
+			      <!-- <p>This page will refresh every 5 seconds.</p> -->
+	</div> <!--/ .header -->
+	<div class="menu">
+		<meta name="viewport" content="width=320">
+		<ul>
+
+			<li><a href="index.html">BERANDA</a></li>
+			<li><a href="aktual.html" onclick="cek();">AKTUAL</a></li>
+			<li><a href="blusukan.html" onclick="cek();">BLUSUKAN</a></li>
+			<li><a href="galeri.html" onclick="cek();">GALERI</a></li>
+			<ul class="nav navbar-nav navbar-right">
+			</ul>
+		    <li data-toggle="modal" data-target="#mydaftar"><a href="daftar.html"><span class=""></span> Daftar</a></li>
+		    <li data-toggle="modal" data-target="#mylogin"><a href="login.html"><span class=""></span> Login</a></li>
+
+	</div>
+
+<!--  -->
+
+<!--  	<h2>Slideshow</h2>
+	<p>Change image every 2 seconds:</p> -->
+	<p></p>
+ 	<div class="slideshow-container">
+	<div class="mySlides fade">
+
+ 	<img src="c.jpeg" style="width:100%">
+
+	</div>
+ 	<div class="mySlides fade">
+
+  	<img src="b.jpeg" style="width:100%">
+	</div>
+ 	<div class="mySlides fade">
+
+  	<img src="a.jpeg" style="width:100%">
+
+	</div>
+	</div>
+	<br>
+	<div style="text-align:center">
+	 <span class="dot"></span> 
+	 <span class="dot"></span> 
+	 <span class="dot"></span> 
+	</div>
+
+ 	<script> //slide show
+	var slideIndex = 0;
+	showSlides();
+ 	function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex> slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 4000); // 
+	}
+	</script>
+
+		<!-- back to top -->
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<script type="text/javascript">
+	    var $backToTop = $(".backTop");
+	    $backToTop.hide();
+	    $(window).on('scroll', function() {
+	      if ($(this).scrollTop() > 100) {
+	        $backToTop.fadeIn();
+	      } else {
+	        $backToTop.fadeOut();
+	      }
+	    });
+
+	    $backToTop.on('click', function(e) {
+	      $("html, body").animate({scrollTop: 0}, 400);
+	    });
+	</script>
+
+		<script type='text/javascript'> //menu melayang
+		//<![CDATA[
+		$(document).ready(function() {
+		    var stickyNavTop = $('.menu ul').offset().top; 
+		    var stickyNav = function(){
+		        var scrollTop = $(window).scrollTop();  
+		        if (scrollTop > stickyNavTop) { 
+		            $('.menu ul').css({ 'position': 'fixed', 'top':0, 'z-index':999 });
+		        } else {
+		            $('.menu ul').css({ 'position': 'relative' });
+		        }
+		    };
+		    stickyNav();
+		    $(window).scroll(function() {
+		        stickyNav();
+		    });
+		});
+		//]]>
+		</script>
+
+		 <script>
+
+		function myFunction() {
+    	document.getElementsByClassName("menu")[0].classList.toggle("responsive");}
+    </script>
+
+		<div class="main">
+		<div class="middle">
+			<h3>Berita Utama</h3>
+			<p><strong><a href="beranda.html">Percepat Pembangunan Rumah Bagi ASN </a></strong>– Presiden Joko Widodo bersama dengan jajaran terkait hari ini menggelar rapat terbatas untuk membahas upaya penyediaan rumah bagi para ASN, TNI, dan Polri. Pembahasan tentang hal itu merupakan bagian dari upaya pemerintah untuk meningkatkan kinerja ASN dan pelayanan publik.
+
+			“Kita akan konsentrasi pada upaya percepatan penyediaan rumah yang layak bagi 945 ribu ASN, 275 ribu prajurit TNI, dan 360 ribu anggota Polri,” kata Presiden dalam arahannya di Kantor Presiden, Jakarta, Rabu, 7 November 2018.</p>
+			<p><img src="1.jpeg" alt=""></p>
+			<p><strong><a href="beranda.html">Saya Akan Jadi Pembeli Pertama Motor Listrik Gesits</a></strong>–Presiden Joko Widodo menerima audiensi tim gabungan yang mempersiapkan sepeda motor listrik Gesits pada Rabu pagi, 7 November 2018. Hadir dari Tim gabungan tersebut di antaranya, Menteri Riset, Teknologi dan Pendidikan Tinggi M Nasir, Rektor Institut Teknologi Sepuluh Nopember Joni Hermana, Rektor Institut Teknologi Bandung Kadarsyah Suryadi, Direktur PT. Gesits Technology Indonesia Zaki Nahdi Saleh, dan para pimpinan BUMN yang terlibat dalam produksi motor listrik tersebut, yakni Direktur Utama PT Wijaya Karya (Persero) Tbk. Tumiyana dan Direktur Utama PT LEN Industri (Persero) Zakky Gamal Yasin.
+
+			Dalam pertemuan tersebut, Presiden yang didampingi Menteri Sekretaris Negara Pratikno, membicarakan persiapan produksi massal sepeda motor listrik Gesits yang merupakan karya anak bangsa. Rencananya, produk tersebut akan segera memasuki tahap produksi dan termasuk salah satu prinsipal Indonesia pertama yang masuk ke pasar sepeda motor listrik Tanah Air.</p>	
+			<p><img src="2.jpeg" alt=""></p>
+			<p><strong><a href="beranda.html">Presiden Jajal MRT dari HI Hingga Lebak Bulus</a></strong>–Presiden Joko Widodo pagi ini, Selasa, 6 November 2018, meninjau perkembangan proyek Mass Rapid Transit (MRT) Jakarta di Stasiun MRT Bundaran Hotel Indonesia (HI). Kedatangannya disambut oleh di antaranya Menteri Perhubungan Budi Karya Sumadi, Gubernur DKI Jakarta Anies Baswedan, dan Dirut PT MRT William Sabandar.
+
+			Tiba di Stasiun MRT Bundaran HI sekira pukul 09.00 WIB, Presiden langsung menuju peron keberangkatan. Dari sana, Presiden bersama dengan rombongan menjajal moda transportasi terbaru di Jakarta itu dengan tujuan Depo MRT Lebak Bulu, Jakarta Selatan.
+
+			Perjalanan Presiden dari Stasiun MRT Bundaran HI ke Depo MRT Lebak Bulus ditempuh dalam waktu kurang lebih 30 menit. Jumlah gerbong kereta yang saat itu dinaiki oleh Presiden adalah 6 gerbong dengan masing-masing berkapasitas 48 kursi, termasuk 6 kursi untuk ibu hamil dan lansia.</p>
+			<p><img src="3.jpeg" alt=""></p>
+		</div> <!--/ .middle -->
+
+<div class="right">
+			<h3>Prioritas</h3>
+			<p>
+				<ul>
+					<li><a href="#">Revolusi Industri 4.0 dan Inovasi Sistem Koin Syariah Blockchain</a></li>
+					<li><a href="#">Gelorakan Bangun Kembali NTB Menjadi Lebih Maju Dan Indah, Jadikan NTB Menjadi Destinasi Wisatawan</a></li>
+					<li><a href="#">Pembangunan Infrastruktur Berorientasi Ramah Lingkungan dan Berkelanjutan</a></li>
+					<li><a href="#">Jalan Sumbawa Besar – Dompu Mulus, Siap Dukung Pemasaran Hasil Pertanian NTB</a></li>
+					<li><a href="#">Geliat Dana Desa Di Desa Senoni Kutai Kartanegara</a></li>
+					<li><a href="#">“Pengurusannya Cepat Masyarakat Senang”</a></li>
+					
+				</ul>
+			</p>
+		</div> <!--/ .right -->
+		<div id="demo">
+				<div class="right">
+			<h3>Provinsi Di Indonesia</h3>
+			<p>
+				<ul>
+					<form>
+					  <select id="mySelect">
+					  	<option id="Aceh">Aceh</option>
+					    <option id="Jawa Tengah">Jawa Tengah</option>
+					    <option id="Jawa Barat">Jawa Barat</option>
+					    <option id="Jawa Timur">Jawa Timur</option>
+					    <option id="Bali">Bali</option>
+					    <option id="Sumatera Utara">Sumatera Utara</option>
+					    <option id="Sumatera Barat	">Sumatera Barat</option>
+					    <option id="Riau">Riau</option>
+					    <option id="Kepulauan Riau">Kepulauan Riau</option>
+					    <option id="Jambi">Jambi</option>
+					    <option id="Bengkulu">Bengkulu</option>
+					    <option id="Sumatera Selatan">Sumatera Selatan</option>
+					    <option id="Kepulauan Bangka Belitung">Kepulauan Bangka Belitung</option>
+					    <option id="Lampung">Lampung</option>
+					    <option id="Banten">Banten</option>
+					    <option id="DKI Jakarta">DKI Jakarta</option>
+					    <option id="DI Yogyakarta">DI Yogyakarta</option>
+					    <option id="Nusa Tenggara Barat">Nusa Tenggara Barat</option>
+					    <option id="Nusa Tenggara Timur">Nusa Tenggara Timur</option>
+					  </select>
+					  <button class="tombol" onclick="loadDoc()">Klik</button>
+
+					</form>
+					
+					<p id="demo"></p>
+					
+				</ul>
+			</p>
+		</div> <!--/ .right -->
+		<div class="right">
+			<h3>Refolusi </h3>
+			<p>
+				<ul>
+					<li><a href="#">Pembentukan Badan untuk Mempercepat Pengembangan SDM Industri</a></li>
+					<li><a href="#">Pemerintah Memulai Renovasi Pasar Atas Bukit Tinggi,Pasar Johar Semarang,dan Stadion Manahan Surakarta</a></li>
+					<li><a href="#">Kuota Tak Terpakai Haji Tahun Ini Turun Dibandingkan 2017</a></li>
+					</ul>
+			</p>
+		</div> <!--/ .right -->
+
+	</div> <!--/ .main -->
+
+
+	<div class="footer1">
+		<a href="beranda.html"><img src="prs.png" width="200" height="50" alt=""></a>
+		<marquee><h2>Mari Wujudkan Indonesia Menjadi Negara Yang Lebih Baik!!</h2></marquee>
+	</div>
+
+	<div class="footer">
+		<p>| Kementerian Sekretariat Negara RI | Sekretariat Kabinet RI </p>
+		<p><a href="http://presidenri.go.id">PresidenRI.go.id © 2018.</a></p>
+	</div> <!--/ .footer -->
+ 
+
+</div>
+</body>
+</html>
+</div>

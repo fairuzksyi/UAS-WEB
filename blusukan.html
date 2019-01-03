@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link href="logo.png" rel="shortcut icon">
+	<meta charset="UTF-8">
+	<title>Presiden RI</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="stylee.css">
+	<script src="javascript.js"></script>
+</head>
+<body>
+	
+<div class="backTop"><img src="11.png" width="25" height="10"></div>
+<div class="container">
+	
+	<div class="header">
+			<a href="index.html"><img src="prs.png" width="200" height="50" alt="head" class="logo"></a>
+	</div> <!--/ .header -->
+	<div class="menu">
+		<ul>
+			<li><a href="index.html">BERANDA</a></li>
+			<li><a href="aktual.html" onclick="cek();">AKTUAL</a></li>
+			<li><a href="blusukan.html">BLUSUKAN</a></li>
+			<li><a href="galeri.html" onclick="cek();">GALERI</a></li>
+			</ul>
+	</div>
+			<div class="main">
+		
+<div class="middle1">
+			<h3>Blusukan</h3>
+			
+			<div class="middle">
+			<p><img src="blusuk1.jpeg" alt=""></p></div>
+			<BR><BR><BR><P><strong>PULAU BALI</strong> Setelah menghadiri Rapimnas ke-1 Partai Hanura Tahun 2017, Presiden Joko Widodo menyerahkan sertifikat hak atas tanah program strategis nasional di Lapangan Renon, Kota Denpasar, Provinsi Bali. Dalam kesempatan tersebut, Presiden menyerahkan 5.903 sertifikat kepada warga Bali, Jumat 4 Agustus 2017.
+
+			Lebih lanjut Presiden menjelaskan bahwa di Indonesia terdapat 126 juta bidang yang harus disertifikatkan, namun yang diberikan baru 46 juta bidang. Tahun ini, pemerintah menargetkan akan membagikan 200.000 sertifikat dan tahun 2019 semua tanah di Bali sudah bersertifikat..
+			</P></BR></BR></BR></BR>
+			<div class="middle">
+			<p><img src="blusuk2.jpeg" width="500" height="550" alt=""></p></div>
+			<BR><BR><BR><BR><BR><BR><P><strong>PULAU JAWA</strong> Di awal sambutannya, Presiden memperoleh informasi bahwa penyuluh agama se-Jawa Tengah yang hadir sebanyak 5.711 orang, baik dari perwakilan agama Islam, Kristen, Katolik, Hindu, Buddha, Konghucu. “Terima kasih atas partisipasinya, kerelaannya dan keikhlasannya. Bapak, ibu, saudara sekalian telah ikut berperan menjaga persatuan dan kesatuan,” kata Presiden.
+
+			“Luar biasa, karena saudara-saudara telah memberikan pengorbanan kepada negara, bangsa dan agama. Luar biasa atas komitmen Saudara memperkuat kerukunan bangsa serta luar biasa atas komitmen Saudara untuk memperkokoh NKRI memperkokoh Pancasila serta memperkokoh Bhinneka Tunggal Ika,” ucapnya.
+			</P></BR></BR></BR></BR></BR></BR>
+			<div class="middle">
+			<p><img src="blusuk3.png" width="700" height="850" alt=""></p></div>
+			<BR><BR><BR><P><strong>PULAU SUMATRA</strong> Semangat untuk bekerja keras dalam membangun bangsa terus digelorakan oleh Presiden Joko Widodo. Hal itu disampaikan Presiden dalam berbagai kesempatan, termasuk ketika memberikan sambutan di hadapan ribuan orang di Lapangan Karebosi, Makassar, Sulawesi Selatan, Minggu, 29 Juli 2018.
+
+			“Marilah kita isi negara ini dengan militansi yang tinggi untuk pembangunan, bekerja keras, produktivitas kita kerjakan bersama-sama,” kata Presiden selepas acara Jalan Sehat Sahabat Rakyat Indonesia untuk Asian Games 2018.
+			</P></BR></BR></BR>
+
+
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<script type="text/javascript">
+	    var $backToTop = $(".backTop");
+	    $backToTop.hide();
+	    $(window).on('scroll', function() {
+	      if ($(this).scrollTop() > 100) {
+	        $backToTop.fadeIn();
+	      } else {
+	        $backToTop.fadeOut();
+	      }
+	    });
+
+	    $backToTop.on('click', function(e) {
+	      $("html, body").animate({scrollTop: 0}, 500);
+	    });
+	</script>
+
+		<script type='text/javascript'>
+	//<![CDATA[
+	$(document).ready(function() {
+	    var stickyNavTop = $('.menu ul').offset().top; 
+	    var stickyNav = function(){
+	        var scrollTop = $(window).scrollTop();  
+	        if (scrollTop > stickyNavTop) { 
+	            $('.menu ul').css({ 'position': 'fixed', 'top':0, 'z-index':999 });
+	        } else {
+	            $('.menu ul').css({ 'position': 'relative' });
+	        }
+	    };
+	    stickyNav();
+	    $(window).scroll(function() {
+	        stickyNav();
+	    });
+	});
+	//]]>
+	</script>
+
+			
+	<div class="middle4">
+		<a href="beranda.html"><img src="prs.png" width="200" height="50" alt=""></a>
+		<marquee><h2>Mari Wujudkan Indonesia Menjadi Negara Yang Lebih Baik!!</h2></marquee>
+	</div>
+
+	<div class="footer">
+		<p>| Kementerian Sekretariat Negara RI | Sekretariat Kabinet RI </p>
+		<p><a href="http://presidenri.go.id">PresidenRI.go.id © 2018.</a></p>
+	</div> <!--/ .footer -->
+ 
+</div>
+
+</body>
+</html>

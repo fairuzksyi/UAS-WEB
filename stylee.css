@@ -1,0 +1,420 @@
+*{
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+
+}
+
+
+body{
+	background: white;
+	font-family: 'Helvetica', arial, sans-serif;
+
+	font-size: 15px;
+}
+
+p{
+	margin-bottom: 20px;
+	line-height: 1.5em;
+}
+h3{
+	margin-bottom: 20px;
+	border-bottom: 1px solid #aaa;
+}
+
+a{
+	text-decoration: none;
+	color: #333;
+}
+a:hover{
+	color: #666;
+}
+#containerr {
+  width: 400px;
+  height: 400px;
+  position: relative;
+  background: white;
+}
+#animate {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  background-color: red;
+}
+
+.backTop {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #dd3333;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+.backTop:hover {
+  cursor: pointer;
+}
+
+* {box-sizing:border-box}
+body {font-family: Verdana,sans-serif;}
+.mySlides {display:none}
+ /* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+ /* The dots/bullets/indicators */
+.dot {
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+ .active {
+  background-color: #717171;
+}
+ /* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 2s;
+  animation-name: fade;
+  animation-duration: 2s;
+}
+ @-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+ @keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+ /* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+.container{
+	max-width: 1080px;
+	margin: 20px auto;
+	background: #fff;
+	padding: 10px;
+}
+.container{
+    display: grid;
+
+}
+
+.menu{
+display: flex;
+border: 0px solid gray;
+flex-direction: row;
+justify-content: center;
+}
+
+.menu ul{
+	background: #dd3333;
+	padding: 0px 0px;
+	list-style: none;
+	position: relative;
+	overflow: hidden;
+	display: flex;
+	width: 100%
+  }
+  .menu li {
+  	float: left;}
+
+   }
+   .menu ul li:hover{
+   background:#e0eeee;
+   }
+   .menu ul li:hover a{
+   color:#000;
+   }
+   .menu ul li a{
+   display: block;
+   padding: 18px;
+   color: #fff;
+   text-decoration: none;
+   }
+
+.header{
+	border: 0px solid #dedede;
+	padding: 10px;
+	margin: 10px;
+	border: 0px solid gray;
+}
+.header1{
+	border: 0px solid #dedede;
+	padding: 10px;
+	margin: 10px;
+	border: 0px solid gray;
+}
+
+      .tombol{
+        /*ubah warna background*/
+        background-color: #dd3333;
+        /*ubah warna teks*/
+        color: white;
+        /*menghilangkan border*/
+        border: none;
+ 		/*atur sudut border*/
+        border-radius: 5px;
+        /*efek bayangan*/
+        box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.2);
+        /*teks rata tengah*/
+        text-align: center;
+        /*ubah jarak margin/luar*/
+        margin: 5px 2px;
+        /*ubah jarak padding/dalam*/
+        padding: 10px 15px;
+        /*ubah tampilan kursor ketika berada diatas elemen*/
+        cursor: pointer;
+      }
+      .tombol:hover{
+        /*ubah warna background ketika kursor berada diatas elemen*/
+        background-color: #dd3333;
+      }
+/* Main */
+	.left{
+		width: 250px;
+		border: 1px solid #F8F8FF;
+		background: #F8F8FF;
+		padding: 10px;
+		margin: 10px;
+		float: left;
+		border-bottom: 2px solid #fff;
+		transition: all 0.5s ease
+	}
+
+	.left:hover {
+	border-bottom: 2px solid orange;
+	}
+	.middle1{
+		width: 1000px;
+		border: 1px solid #dedede;
+		background: #F8F8FF;
+		padding: 10px;
+		margin: 10px;
+		float: center;
+	}
+		.middle5{
+		width: 940px;
+		border: 1px solid #dedede;
+		background: #F8F8FF;
+		padding: 10px;
+		margin: 10px;
+		float: center;
+	}
+	.middle3{
+		width: 1040px;
+		border: 1px solid #dedede;
+		background: #F8F8FF;
+		padding: 10px;
+		margin: 10px;
+		float: center;
+	}
+	.middle4{
+		width: 960px;
+		border: 1px solid #dedede;
+		background: #F8F8FF;
+		padding: 10px;
+		margin: 10px;
+		float: center;
+	}
+	.middle2{
+		width: 500px;
+		border: 1px solid #dedede;
+		background: #F8F8FF;
+		padding: 10px;
+		margin: 10px;
+		float: left;
+	}
+
+	.middle{
+		width: 500px;
+		border: 1px solid #dedede;
+		background: #F8F8FF;
+		padding: 10px;
+		margin: 10px;
+		float: left;
+	}
+	.baru{
+		width: 70px;
+		border: 1px solid #dedede;
+		background: #F8F8FF;
+		float: left;
+	}
+		.middle img{
+			max-width: 100%;
+			height: auto;
+		}
+
+		.middle a{
+			font-weight: bold;
+		}
+
+	.right{
+		width: 250px;
+		border: 1px solid #dedede;
+		background: #F8F8FF;
+		padding: 10px;
+		margin: 10px;
+		float: left;
+	}
+
+	.right:hover {
+	border-bottom: 2px solid orange;
+	}
+	.right ul{
+		list-style-type: none;
+	}
+	.right ul li{
+		display: block;
+	}
+	.right ul li a{
+		display: block;
+		border-bottom: 1px solid #dedede;
+		margin-bottom: 10px;
+		padding: 10px 5px;
+	}
+	.right ul li a:hover{
+		color: orange;
+	}
+
+	.kanan{
+		width: 500px;
+		border: 1px solid #dedede;
+		background: #F8F8FF;
+		padding: 10px;
+		margin: 10px;
+		float: left;
+	}
+		.kanan img{
+			max-width: 100%;
+			height: auto;
+		}
+
+		.kanan a{
+			font-weight: bold;
+		}
+	.footer{
+	clear: both;
+	border: 1px solid #dedede;
+	background: #dd3333;
+	padding: 8px;
+	margin: 8px;
+	}
+		.footer1{
+	clear: both;
+	border: 1px solid #dedede;
+	background: ;
+	padding: 8px;
+	margin: 8px;
+	}
+
+
+/************************************************************************************
+MEDIA QUERIES
+*************************************************************************************/
+/* untuk ukuran 1080px kebawah */
+@media screen and (max-width: 1080px) {
+	
+	.container {
+		display: grid;
+		flex: content;
+		width: 100%;
+	}
+	.left {
+		width: 25%;
+	background: #F8F8FF;
+	}
+
+	.middle {
+		width: 68%;
+		float: right;
+	}
+
+	.middle1 {
+		width: 95%;
+		float: center;
+	}
+	.middle3 {
+		width: 95%;
+		float: center;
+	}
+	.middle4 {
+		width: 95%;
+		float: center;
+	}
+	.demo-3{
+		width: auto;
+		float: none;
+	}
+	
+	.right {
+		clear: both;
+		padding: 1% 4%;
+		width: auto;
+		float: none;
+	}
+	.kanan {
+		width: 68%;
+		float: right;
+	}
+}
+
+
+/* untuk ukuran layar 700px kebawah */
+@media screen and (max-width: 780px) {
+	
+	.header, 
+	.footer{
+		text-align: center;
+	}
+	.left {
+		width: auto;
+		float: none;
+	}
+	
+	.middle {
+		width: auto;
+		float: none;
+	}
+	.middle1 {
+		width: auto;
+		float: center;
+	}
+	.middle3 {
+		width: auto;
+		float: center;
+	}
+	.middle4 {
+		width: auto;
+		float: center;
+	}
+	
+	.right {
+		width: auto;
+		float: none;
+	}
+		.demo-3{
+		width: auto;
+		float: none;
+	}
+
+	.kanan {
+		width: auto;
+		float: none;
+	}
+}

@@ -1,0 +1,156 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<link href="logo.png" rel="shortcut icon">
+	<meta charset="UTF-8">
+	<title>Presiden RI</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="stylee.css">
+	<script type="text/javascript" src="jquery-1.2.3.min.js"></script>
+</head>
+<body>
+	
+<div class="backTop"><img src="11.png" width="25" height="10"></div>
+<div class="container">
+	
+	<div class="header">
+			<a href="index.html"><img src="prs.png" width="200" height="50" alt="head" class="logo"></a>
+	</div> <!--/ .header -->
+	<div class="menu">
+		<ul>
+			<li><a href="index.html">BERANDA</a></li>
+			<li><a href="aktual.html" onclick="cek();">AKTUAL</a></li>
+			<li><a href="blusukan.html">BLUSUKAN</a></li>
+			<li><a href="galeri.html" onclick="cek();">GALERI</a></li>
+			</ul>
+	</div>
+			<div class="main">
+		
+<div class="middle1">
+			<h3>Form Pendaftaran</h3>
+			
+			<div class="middle5">
+
+					<div id="loading" style="display:none;"><img src="loading.gif" alt="loading..." /></div>
+					<div id="result" style="display:none;"></div>
+					<form id="myForm" method="post" action="proses.php">
+						<table>
+							<tr>
+								<td width="100">NIK</td>
+								<td>
+									<input name="nik" size="30" type="text" />
+								</td>
+							</tr>
+							<tr>
+								<td>Nama</td>
+								<td>
+									<input name="nama" size="40" type="text" />
+								</td>
+							</tr>
+							<tr>
+								<td>Tempat Lahir</td>
+								<td>
+									<input name="tempat_lahir" size="40" type="text" />
+								</td>
+							</tr>
+							<tr>
+								<td>Tanggal Lahir</td>
+					
+								<td>
+									<input name="tgl_lahir" size="40" type="text" />
+								</td>
+							</tr>
+							<tr>
+								<td>Alamat</td>
+								<td>
+									<input name="alamat" size="60" type="text" />
+								</td>
+							</tr>
+							<tr>
+								<td>No. Telp</td>
+								<td>
+									<input name="no_telp" size="30" type="text" />
+								</td>
+							</tr>
+							<tr>
+								<td>No. HP</td>
+								<td>
+									<input name="no_hp" size="30" type="text" />
+								</td>
+							</tr>
+							<tr>
+								<td>E-mail</td>
+								<td>
+									<input name="email" id="email" size="30" type="text" />
+								</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td>
+									<input type="submit" value="Submit" />
+									<input type="reset" value="Reset" />
+								</td>
+							</tr>
+						</table>
+					</form>
+
+					<style type="text/css">
+						body, table, input, select, textarea { font: 11px/20px Verdana, sans-serif; }
+						h4 { font-size: 18px; }
+						input { padding: 3px; border: 1px solid #999; }
+						td { padding: 5px; }
+						#result { background-color: #F0FFED; border: 1px solid #215800; padding: 10px; width: 400px; margin-bottom: 20px; }
+						</style>
+						
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<script type="text/javascript">
+	    var $backToTop = $(".backTop");
+	    $backToTop.hide();
+	    $(window).on('scroll', function() {
+	      if ($(this).scrollTop() > 100) {
+	        $backToTop.fadeIn();
+	      } else {
+	        $backToTop.fadeOut();
+	      }
+	    });
+
+	    $backToTop.on('click', function(e) {
+	      $("html, body").animate({scrollTop: 0}, 500);
+	    });
+	</script>
+
+		<script type='text/javascript'>
+	//<![CDATA[
+	$(document).ready(function() {
+	    var stickyNavTop = $('.menu ul').offset().top; 
+	    var stickyNav = function(){
+	        var scrollTop = $(window).scrollTop();  
+	        if (scrollTop > stickyNavTop) { 
+	            $('.menu ul').css({ 'position': 'fixed', 'top':0, 'z-index':999 });
+	        } else {
+	            $('.menu ul').css({ 'position': 'relative' });
+	        }
+	    };
+	    stickyNav();
+	    $(window).scroll(function() {
+	        stickyNav();
+	    });
+	});
+	//]]>
+	</script>
+
+			
+	<div class="footer1">
+		<a href="beranda.html"><img src="prs.png" width="200" height="50" alt=""></a>
+		<marquee><h2>Mari Wujudkan Indonesia Menjadi Negara Yang Lebih Baik!!</h2></marquee>
+	</div>
+
+	<div class="footer">
+		<p>| Kementerian Sekretariat Negara RI | Sekretariat Kabinet RI </p>
+		<p><a href="http://presidenri.go.id">PresidenRI.go.id © 2018.</a></p>
+	</div> <!--/ .footer -->
+ 
+</div>
+
+</body>
+</html>
